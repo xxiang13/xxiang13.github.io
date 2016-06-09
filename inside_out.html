@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Photon by HTML5 UP</title>
+		<title>Xiang Li | Movie Script Analytics</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -22,16 +22,73 @@
 				<div class="inner">
 					<!--div class="logo"><img src="images/Inside-Out-logo.png" alt="inside out logo" align="center"></div-->
 					<h1><img class=logo src="images/Inside-Out-logo2.png" alt="inside out logo" align="center"><br>INSIDE OUT <br> Movie Script Text Analytics</h1>
-					<p>This project involves analyzing dialogue text. We report raw facts and conduct an extensive analysis,<br />present visualizations of the analysis, and provide interesting conclusions and interpretations from the results.<br />The tools of choice were Python 2.7 for data processing and text mining, Stanford Corenlp (Python Wrapper) <br />for Natural Language Processing, and Tableau 9.2 for visualization. This project page presents highlights<br /> of the findings. For the comprefensive report and code, please visit the <a href="https://github.com/xxiang13/InsideOut_Movie_Script_Text_Analytics" target="_blank"> github page</a>. All rights reserved.</p>
+					<p>This project involves analyzing dialogue text. We report raw facts and conduct an extensive analysis,<br />present visualizations of the analysis, and provide interesting conclusions and interpretations from the results.<br />The tools of choice were Python 2.7 for data processing and text mining, Stanford Corenlp (Python Wrapper) <br />for Natural Language Processing, and Tableau 9.2 for visualization. This project page presents highlights<br /> of the findings. For the comprefensive report and code, please visit the <strong><a href="https://github.com/xxiang13/InsideOut_Movie_Script_Text_Analytics" target="_blank"> github page</a></strong>. All rights reserved.</p>
                     <br />
                     <p>Team: Steven Lin, Xiang Li</p>
 					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
+						<li><a href="#exploratory" class="button scrolly">Exploratory</a></li>
+                        <li><a href="#sentiment" class="button scrolly">Sentiment</a></li>
+						<li><a href="#cluster" class="button scrolly">Clustering</a></li>
+                        <p></p>
+                        <li><a href="#document" class="button scrolly">Document Similarity</a></li>
+                        <li><a href="#topic" class="button scrolly">Topic Analysis</a></li>
 					</ul>
 				</div>
                 
 			</section>
-
+        
+		<!-- Three -->
+			<section id="exploratory" class="main style1 special">
+				<div class="container">                    
+					<header class="major">
+						<h2>Exploratory Analysis</h2>
+					</header>
+                    <p>We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely <br />defined by quote index (time index). And we looked at a unigram word cloud from quotes and descriptions of the script.</p>
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+                        
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+                        <br />
+                        <div class="6u 12u$(medium)">
+							<p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+						</div>
+                        
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely defined by quote index (time index). </p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+        
+        
 		<!-- One -->
 			<section id="one" class="main style1">
 				<div class="container">
@@ -49,7 +106,7 @@
 					</div>
 				</div>
 			</section>
-
+        
 		<!-- Two -->
 			<section id="two" class="main style2">
 				<div class="container">
