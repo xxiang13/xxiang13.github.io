@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Xiang Li | Movie Script Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main_projpg.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+                
+				<div class="inner">
+					<!--div class="logo"><img src="images/Inside-Out-logo.png" alt="inside out logo" align="center"></div-->
+					<h1><img class=logo src="images/movie_network_logo.png" alt="" align="center"><br>MOVIE CITATION <br> Network Analytics</h1>
+                    <p style="margin-left: 15%; margin-right: 15%">The focus of this project is to analyze the characteristics of network formed by film citations. A film is said to cite another film if a sequence, sentence, character, or other part of the referenced film has been adopted, used, or imitated in the referencing film. Analyzing the film citation network gives insights into what characteristics of a film makes it an influential piece of art, and determines the significance of those works. This page presents highlights of the findings. For the comprefensive report and code, please visit the <strong><a href="https://github.com/xxiang13/InsideOut_Movie_Script_Text_Analytics" target="_blank"> github page</a></strong>. All rights reserved.</p>
+                    <br />
+                    <p>Team: Xiang Li, Iris Tu, Ameer Khan</p>
+					<ul class="actions">
+						<li><a href="#exploratory" class="button scrolly">Exploratory</a></li>
+                        <li><a href="#sentiment" class="button scrolly">Sentiment</a></li>
+						<li><a href="#topic" class="button scrolly">Topic</a></li>
+                        <p></p>
+                        <li><a href="#document" class="button scrolly">Document Similarity</a></li>
+                        <li><a href="#cluster" class="button scrolly">Clustering</a></li>
+					</ul>
+				</div>
+                
+			</section>
+        
+		<!-- Three -->
+			<section id="exploratory" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Exploratory Analysis</h2>
+					</header>
+                    <strong><p>We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely <br />defined by quote index (time index). And we looked at a unigram word cloud from quotes and descriptions of the script.</p></strong>
+					<div class="row 150%">
+                        <div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit"><img src="images/insideout3.png" alt="" /></span>
+                        </div>
+
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout1.png" alt="" /></span>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        
+                        
+                        <div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit"><img src="images/insideout2.png" alt="" /></span>
+                        </div>
+					</div>
+				</div>
+			</section>
+        
+        
+		<!-- Two -->
+			<section id="sentiment" class="main style2">
+				<div class="container">
+					<header class="major" align="center">
+						<h2>Sentiment Analysis</h2>
+					</header>
+                    <strong><p align="center">We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely <br />defined by quote index (time index). And we looked at a unigram word cloud from quotes and descriptions of the script.</p></strong>
+                    
+					<div class="row 150%">
+                     <div class="6u 12u$(medium)" style="margin-bottom: 40px;">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)" style="margin-bottom: 40px;">
+                            <span class="image fit"><img src="images/insideout_sent1.png" alt="" /></span>
+                        </div>
+                        
+						<div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                            <span class="image fit"><img src="images/insideout_sent2.png" alt="" /></span>
+						</div>
+                        
+						<div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                            <span class="image fit"><img src="images/insideout_sent3.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="topic" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Topic Analysis</h2>
+					</header>
+					<Strong><p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p></Strong>
+					<div class="row 150%">
+                        <div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit"><img src="images/insideout_topic1.png" alt="" /></span>
+                        </div>
+
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout_topic2.png" alt="" /></span>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        
+                        
+                        <div class="6u 12u$(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <span class="image fit"><img src="images/insideout_topic3.png" alt="" /></span>
+                        </div>
+                        
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout_topic4.png" alt="" /></span>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+					</div>
+				</div>
+			</section>
+
+			<section id="document" class="main style2">
+				<div class="container">
+					<header class="major" align="center">
+						<h2>Document Similarity</h2>
+					</header>
+                    <strong><p align="center">We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely <br />defined by quote index (time index). And we looked at a unigram word cloud from quotes and descriptions of the script.</p></strong>
+                    
+					<div class="row 150%">
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout_doc1.png" alt="" /></span>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout_doc2.png" alt="" /></span>
+                        </div>
+                        <div class="6u$ 12u$(medium) important(medium)">
+                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                        </div>
+					</div>
+				</div>
+			</section>
+        
+    
+			<section id="cluster" class="main style1 special">
+				<div class="container">
+					<header class="major" align="center">
+						<h2>Clustering Analysis</h2>
+					</header>
+                    <strong><p align="center">We started an exploratory analysis with distributions of characters, locations and scenes by quotes since data is uniquely <br />defined by quote index (time index). And we looked at a unigram word cloud from quotes and descriptions of the script.</p></strong>
+                    
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/insideout_cluster.png" alt="" /></span>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+							<p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
+							<p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+        
+		<!-- Four -->
+			<section id="four" class="main style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Want to know more?</h2>
+					</header>
+					<p>Visit the project <strong><a href="https://github.com/xxiang13/InsideOut_Movie_Script_Text_Analytics" target="_blank">github repo.</a></strong> to view the comprefensive report and code</p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/xiangshawnli" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/xxiang13" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Xiang Li</li><li>Design: HTML5 UP</a></li>
+				</ul>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main_projpg.js"></script>
+
+	</body>
+</html>
