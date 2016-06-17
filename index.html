@@ -23,8 +23,9 @@
     </div>
       
     <script type="text/javascript">
-        var w = 1000,
-            h = 900;
+        
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
 
         var nodes = d3.range(400).map(function() { return {radius: Math.random() * 12 + 4}; }),
             color = d3.scale.category20();
@@ -41,7 +42,8 @@
 
         force.start();
 
-        var svg = d3.select("#body").append("svg:svg")
+        var svg = d3.select("#body")
+            .append("svg:svg")
             .attr("width", w)
             .attr("height", h);
 
